@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    size_t n {}; cin >> n; int numbers[n]; //creating n length array
+    int m {};
+    for(int i {n-1};i>=0;i--){
+        //putting given numbers in array with reverse order
+        cin >> m;
+        numbers[i] = m;
+    }
+    for(int i {};i<n;i++){
+        //printing array elements with space
+        cout << numbers[i] << " ";
+    }  
+    return 0;
+}
